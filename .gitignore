@@ -65,7 +65,7 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
+# Yarn  Integrity file
 .yarn-integrity
 
 # dotenv environment variables file
@@ -102,3 +102,24 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Yarn 2 files
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Hugo default output directory
+/public
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store

@@ -1,0 +1,8 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    {{ $style := resources.Get "sass/master.scss" | toCSS ( dict "targetPath" "css/master.css" "enableSourceMap" true) | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
