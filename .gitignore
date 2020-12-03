@@ -121,5 +121,6 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
+go.sum
 # OSX
 .DS_Store
