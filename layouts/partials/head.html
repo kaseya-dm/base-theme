@@ -3,6 +3,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    {{ with $use_aos -}}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    {{ end }}
+
     {{ $style := resources.Get "scss/main.scss" | toCSS ( dict "targetPath" "css/main.css" "enableSourceMap" true) | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
