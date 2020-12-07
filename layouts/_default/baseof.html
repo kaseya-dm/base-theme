@@ -11,6 +11,7 @@
         {{ $use_jquery := .Site.Params.scripts.use_jquery | default true }}
         {{ $use_popper := .Site.Params.scripts.use_popper | default true }}
         {{ $use_bootstrap := .Site.Params.scripts.use_bootstrap | default true }}
+        {{ $use_aos := .Site.Params.scripts.use_aos | default false }}
         {{ with $use_jquery -}}
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         {{- end }}
