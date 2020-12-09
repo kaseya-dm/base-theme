@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+{{ if .Params.page }}
+
+{{ $page := .Params.page }}
+{{ $page_path := printf "pages/%s.html" $page }}
+
+{{ partial $page_path }}
+
+{{ end }}
+
+{{ end }}
