@@ -112,7 +112,8 @@ dist
 !.yarn/versions
 
 # Hugo default output directory
-/public
+public/
+resources/
 
 ## OS Files
 # Windows
@@ -121,6 +122,5 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-go.sum
 # OSX
 .DS_Store
