@@ -4,7 +4,7 @@
 
     <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
     {{- if .Params.description }}
-    <meta name="description" content="{{ . }}">
+    <meta name="description" content="{{ .Params.description }}">
     {{- end }}
 
     <link rel="icon" type="image/png" href="/favicon.png"/>
