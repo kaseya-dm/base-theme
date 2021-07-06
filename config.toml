@@ -25,7 +25,7 @@
         source = "assets/scss/_vendor/bootstrap/_vendor"
         target = "assets/scss/_vendor/bootstrap/vendor"
     [[module.imports]]
-        path="github.com/twbs/bootstrap@v4.6.0"
+        path="github.com/twbs/bootstrap"
         [[module.imports.mounts]]
             source = "scss"
             target = "assets/scss/_vendor/bootstrap"
