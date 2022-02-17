@@ -16,7 +16,7 @@
 
     {{ $use_swiper := .Site.Params.scripts.use_swiper | default false }}
     {{ with $use_swiper -}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" integrity="sha256-qW4VderRQKnkUH82FjfAQMIpHpuaGKYhyI/VBwYma/g=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" integrity="sha512-+S5HQ2Ix/L84uhBLMimQiJlFjqR/Unnord77MEDNpWtK99i2Tk212EPb3/ahEjgaPRBKkKtTzMHIdO2HQXT3dQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {{ end }}
 
     {{ $style := resources.Get "scss/main.scss" | toCSS ( dict "targetPath" "css/main.css" "enableSourceMap" true) | minify | fingerprint }}
